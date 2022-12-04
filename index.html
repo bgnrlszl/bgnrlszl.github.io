@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <title>Civitas Fidelissima Verseny LOG-felület</title>
+        <script src="mycode.js"></script>
+    </head>
+    <body>
+       <b>Civitas Fidelissima Emlékverseny <br> Versenyjegyzőkönyv-készítő felület</b>
+       <br>
+       <p id="message" style="color:red;"></p> 
+       <b>Hívójel: </b> 
+       <input id="callsign" type="text" value="ha0teszt" maxlength="13"> 
+       <br>
+       <br>
+       <b> Kategória: </b>  
+       <select id="cat1">
+            <option> Válassz! </option>
+            <option value= "HA">Magyar</option>
+            <option value= "DX">Külföldi</option>
+            <option value= "SRK">Szervező (SRK)</option>
+       </select>
+       <select id="cat2">
+            <option> Válassz! </option>
+            <option value= "YL">Női</option>
+            <option value= "OM">Férfi</option>
+            <option value= "MO">Közösségi</option>
+       </select>
+       <select id="cat3">
+            <option> Válassz! </option>
+            <option value= "CW">CW</option>
+            <option value= "SSB">SSB</option>
+       </select>
+       <br>
+       <br>
+       <b>Kért pontszám:</b>
+       <input id="score" type="text" value="0"> 
+       <br>
+       <br>
+       <b>Beküldő teljes neve:</b>
+       <input id="applicant" type="text" value="Minta Mária">
+       <br>
+       <br>
+       <b>Beküldő email-címe:</b>
+       <input id="email" type="text" value="maria@minta.hu">
+       <br>
+       <br>
+       <b>Beküldő címe:</b>
+       <br>
+       <textarea id="address" cols="45" rows="6" >Minta utca 3. 
+Mintafalva, Magyarország
+1234</textarea>
+       <br>
+       <br>
+       <div style="visibility:hidden">
+          <b>Adott riport:</b>
+          <select id="exch">
+               <option value= "fix">Végig azonos</option>
+               <option value= "var">Változó</option>
+          </select>
+          <p>&nbsp;</p>
+          <input id="fixexch" type="text" maxlength="3" value="59">
+          <br><br>
+       </div>
+       <b>Naplózott összeköttetések:</b>
+       <br/>
+       <p>Kérlek, az alábbi szövegdobozba másold be a QSO-id adatait! Egy QSO egy sor legyen. <br> Minden QSO-hoz ki kell töltened minden rovatot, ezeket egy-egy szóközzel kell elválasztani egymástól - ahogy a mintasorokban is látható. <br> A QSO-kat a választóvonal alá kezdd el írni, a mintasorokat és a vonalat ne töröld ki! 
+     </p>
+       <br>
+       <textarea name="qso" id="qso" rows="30" cols="100">HHNN ÓÓPP SÁV HÍVÓ  ADOTT  VETT 
+1210 0600 40M HA1AT 59 001 59 015
+1211 0900 80M HA1KSS 59 002 59 CF
+---------------------------------</textarea>
+       <br>
+       <br>
+       <button type="button" onclick="button_click()"> Beküldöm </button>
+       <br>
+       <br>
+       <b>Elkészült Cabrillo LOG</b>
+       <p>Nézd át a Cabrillo LOG-ot, hogy helyesek az adatok. Ha valami nem stimmel, bármit változtathatsz. <br> Ha elkészültél, nyomd meg az alsó gombot, majd kattints a letöltés gombra. A fájlt nevezd át a hívójeledre!
+       </p>
+       <br>
+       <textarea name="cab" id="cab" rows="30" cols="100"></textarea>
+       <br>
+       <br>
+       <b>LOG mentése: </b>
+       <button download="file.txt" idtype="button" onclick="button_click2()"> Rendben, kérem a fájlt  </button> <div id="download_link" style="visibility:hidden"> <a id="link" target="_blank" download="HIVOJEL.cbr">Letöltés</a>
+       </div>
+     </body>
+</html>
