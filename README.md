@@ -1,5 +1,5 @@
 <h1>Jegyzőkönyv-készítő webform</h1>
-<b> a <a href="https://ha1kss.wordpress.com/cf-kiiras/"Civitas Fidelissima verseny</a> résztvevői számára</b>
+<b> a <a href="https://ha1kss.wordpress.com/cf-kiiras/">Civitas Fidelissima verseny</a> résztvevői számára</b>
 <br/>
 <br/>
 <b>Problémaleírás</b>
