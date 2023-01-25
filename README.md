@@ -1,5 +1,5 @@
 <h1>Jegyzőkönyv-készítő webform</h1>
-<b> a Civitas Fidelissima verseny résztvevői számára</b>
+<b> a <a href="https://ha1kss.wordpress.com/cf-kiiras/"Civitas Fidelissima verseny</a> résztvevői számára</b>
 <br/>
 <br/>
 <b>Problémaleírás</b>
@@ -20,3 +20,5 @@
   <li>A felhasználó egy második szövegdobozban visszakapja a szabványos formátumra átalakított jegyzőkönyvet, amit át tud nézni, esetleg javítani tud benne adattévesztéseket.</li>
   <li> Gombnyomásra a második szövegdoboz tartalma fájlba kiíródik, amit a felhasználó aztán email-ben beküldhet a verseny szervezőinek</li>
 </ul>
+<br/>
+<i>Megjegyzés: a webform a tesztelést követően végül nem került használatba, időközben elkészült egy másik, szélesebb szolgáltatáskínálatú program a célra</i> 
